@@ -1,8 +1,12 @@
-<div class="jumbotron">
-  <h1 class="display-4">VIRTUAL BAR!</h1>
-  <p class="lead">This is an amazing application inspired by flatirons own TCF <strong>Dick Ward</strong></p>
-  <hr class="my-4">
-  <p>Virtual bar allows a user to order drinks to a </p>
-  <%= button_to "signup", '/users/new', method: :get, class: 'btn btn-primary btn-lg' %>
+<div class="container full-height align-middle">
+  <div class="row align-items-center h-100">
+    <div class="mx-auto">
 
+      <h1 class="display-1">VIRTUAL BAR!</h1>
+      <p class="lead">This is an amazing application inspired by flatirons own TCF <strong>Dick Ward</strong></p>
+      <%= button_to "Sign Up", '/users/new', method: :get, class: 'btn btn-primary btn-lg' %>
+      <%= button_to "Log In", '/users/login', method: :get, class: 'btn btn-primary btn-lg' %>
+    </div>
+    </div>
+  </div>
 </div>
