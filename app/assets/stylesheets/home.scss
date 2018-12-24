@@ -1,9 +1,14 @@
-.flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+body > div.container.full-height.align-middle {
+  margin: 0;
+  padding: 0;
+  /* The image used */
+  background-image: url("beer.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
 }
-
 .full-height {
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
@@ -19,4 +24,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.mx-auto {
+  color: white
 }
