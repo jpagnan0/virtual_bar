@@ -1,7 +1,19 @@
 require 'test_helper'
 
 class DrinksControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+  test "should get index" do
+    get drinks_index_url
+    assert_response :success
+  end
+
+  test "should get new" do
+    get drinks_new_url
+    assert_response :success
+  end
+
+  test "should get show" do
+    get drinks_show_url
+    assert_response :success
+  end
+
 end

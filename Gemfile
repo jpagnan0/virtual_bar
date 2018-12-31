@@ -39,6 +39,7 @@ gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
 gem 'flash-messenger'
 # gem "bootstrap_form", ">= 4.0.0"
+gem 'httparty'
 gem 'faker'
 
 
