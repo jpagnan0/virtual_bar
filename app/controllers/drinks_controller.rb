@@ -7,14 +7,9 @@ class DrinksController < ApplicationController
     # byebug
   end
 
-  def new
-  end
 
   def show
-    # @drink = DRINKS.fetch(params[:id])
+    @drink = Drink.find(params[:id])
   end
 
-  def create
-
-  end
 end
