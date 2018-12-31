@@ -1,10 +1,47 @@
-<h1>Drinks#index</h1>
-<div class="d-flex flex-row">
-  <% @drinks.each do |drink| %>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <p><%=  drink["name"] %></p>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 mx-auto col-12 text-center mb-3">
+      <h1 class="mt-0 text-primary">Our Menu</h1>
+    </div>
+
+    <div class="col-12 mt-4">
+      <p class="lead text-center pb-4" style="color: #000;">Select your drink(s) to be tracked by your Virtual Bar!</p>
+
+      <h3 class="text-center">Cocktails</h3>
+      <hr class="accent my-5">
+    </div>
+
+    <div class="card-columns">
+      <div class="card card-body">
+        <span class="float-right font-weight-bold">$10</span>
+        <h6 class="text-truncate">Chocolate Martini</h6>
+        <p class="small">Tito's Vodka and White Créme de Cacao dusted with hand shaved chocolate.</p>
       </div>
-    <div>
-  <% end %>
+      <div class="card card-body">
+        <span class="float-right font-weight-bold">$9</span>
+        <h6 class="text-truncate">Summer Breeze Martini</h6>
+        <p class="small">Hendrick’s Gin, St. Germain Elderflower Liqueur and Brancot Sauvignon Blanc with a floater of Cristalino Cava Brut.</p>
+      </div>
+      <div class="card card-body">
+        <span class="float-right font-weight-bold">$9</span>
+        <h6 class="text-truncate">Sweet Heat Margarita</h6>
+        <p class="small">Jalapeño infused tequila, triple sec, pineapple juice, lime.</p>
+      </div>
+      <div class="card card-body">
+        <span class="float-right font-weight-bold">$10</span>
+        <h6 class="text-truncate">Prickly Pear</h6>
+        <p class="small">New Amsterdam Vodka and Pear liquer in a sugar rimmed glass.</p>
+      </div>
+      <div class="card card-body">
+        <span class="float-right font-weight-bold">$9</span>
+        <h6>Classic Martini</h6>
+        <p class="small">Seagrams Gin, Dry Vermouth, pickle juice, olive juice.</p>
+      </div>
+      <div class="card card-body">
+        <span class="float-right font-weight-bold">$10</span>
+        <h6 class="text-truncate">Ruby Red Rosemary Refresher</h6>
+        <p class="small">House infused rosemary vodka, St. Germaine Elderflower liqueur, grapefruit juice and a splash of soda.</p>
+      </div>
+    </div>
+  </div>
 </div>

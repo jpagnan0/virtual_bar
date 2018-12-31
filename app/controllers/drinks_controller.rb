@@ -1,15 +1,9 @@
 class DrinksController < ApplicationController
-  COCKTAILS = HTTParty.get("http://localhost:8000/api/v1/cocktails")
-  DRINKS = JSON.parse(COCKTAILS.body)
+  # COCKTAILS = HTTParty.get('http://localhost:8000/api/v1/cocktails')
+  # DRINKS = JSON.parse(COCKTAILS.body)
+
   def index
-
-    @drinks = DRINKS
-
-    @drinks_hash = {
-
-    }
-    # byebug
-    # byebug
+    @drinks = Drink.all
     # byebug
   end
 
@@ -17,7 +11,10 @@ class DrinksController < ApplicationController
   end
 
   def show
-    @drink = DRINKS.fetch(params[:id])
-    byebug
+    # @drink = DRINKS.fetch(params[:id])
+  end
+
+  def create
+
   end
 end
