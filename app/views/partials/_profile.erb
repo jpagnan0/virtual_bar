@@ -1,6 +1,13 @@
-<div class="d-flex flex-row justify-content-around">
+<div class="container">
     <section class="d-flex align-items-center user-info">
-      <h4 class="p-2 mr-2"><%= gravatar_for @user %></h4>
+      <!-- <h4 class="p-2 mr-2"></h4> -->
       <h1 class="m-3 display-2"><%= @user.user_name %></h1>
+
     </section>
+    <% @user.drinks.each do |drink| %>
+    <div class="card card-body">
+      <h6 class="text-truncate"> <%= drink.drink_name %> </h6>
+    </div>
+    <% end %>
 </div>
+<%# <%= gravatar_for @user %> %>

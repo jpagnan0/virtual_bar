@@ -1,6 +1,14 @@
-<% @drinks.each do |drink| %>
+<h4>Your Tab: </h4>
+<ol>
+  <% @ordered_drinks.each do |drink| %>
+    <li> <%= drink.drink_name %> </li>
+  <% end %>
+</ol>
+
+<% @drinks.map do |drink| %>
   <div class="card card-body">
     <span class="float-right font-weight-bold">$<%= (1..20).to_a.sample %></span>
-    <h6 class="text-truncate"><%= drink.drink_name %></h6>
+    <h6 class="text-truncate"><%= link_to drink.drink_name, drink %></h6>
+      <%= button_to "Add To Tab", add_drink_to_tab_path, method: :patch, params: { drink_id: drink.id, drink_name: drink.drink_name} %>
   </div>
 <% end %>
